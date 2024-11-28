@@ -1,0 +1,229 @@
+/*Remove os espaçamentos no elemento body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Configuração de todo conteudo do site*/
+body {
+    background-color: #f7e6e6;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Configurando todos os titulos*/
+.titulo {
+    background-color: rgba(190, 190, 190, 0.4);
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    color: #292929;
+    padding-top: 15px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/*Configurando o forms*/
+.informacoes-cadastro {
+    width: 95%;
+    margin: auto;
+}
+
+#principal {
+    width: 500px;
+    height: 500px;
+    background-color: #f7e6e6;
+    color: #292929;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+#principal h1 {
+    width: 100%;
+    height: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1px;
+    background-color: rgba(190, 190, 190, 0.5);
+    color: #292929;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+#informacoes-cadastro label {
+    width: 50px;
+    height: 32px;
+    display: block;
+    font-weight: bold;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: #2d2519;
+    padding-left: 50px;
+    
+}
+
+#informacoes-cadastro input {
+    width: 85%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    background-color: #dad1d1c4;
+    color: #292929;
+    font-family: sans-serif;
+    margin-left: 38px;
+}
+
+#cadastrar, #limpar {
+    margin-top: 20px;
+    margin-left: 83px;
+    float: left;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(190, 190, 190, 0.8);
+    margin-left: 15%;
+    color: white;
+}
+
+#cadastrar, #limpar {
+    padding: 10px;
+    margin-left: 88px;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#cadastrar:hover, #limpar:hover {
+    cursor: pointer;
+    background-color: rgba(190, 190, 190, 0.8);
+}
+
+/*Configurando a lista dos pets cadastrados*/
+.lista {
+    width: 30%;
+    height: 30px;
+    padding-top: 5px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(190, 190, 190, 0.5);
+    margin-right: 2px;
+    border-radius: 2px;
+}
+
+#listapets {
+    width: 1200px;
+    background-color: #f7e6e6;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px black;
+    color: #292929;
+    font-family: sans-serif;
+}
+
+#listapets h1 {
+    width: 100%;
+    height: 70px;
+    font-family: sans-serif;
+    background-color: rgba(190, 190, 190, 0.5);
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    color: #292929;
+}
+
+#listapets .linha {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-bottom: 13px;
+    margin-left: 20px;
+    border: 1px solid rgba(190, 190, 190, 0.5);
+    border-radius: 10px;
+    background-color: #e6d9d9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#listapets .linha div {
+    max-height: 50px;
+}
+
+#listDados .linha div {
+    width: 30%;
+    margin-right: 5px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #e6d9d9;
+}
+
+#listDados div:hover {
+    transform: scale(1.02);
+    border-radius: 5px;
+}
+
+.dados div {
+    width: 50px;
+    height: 75px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.dados img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.dados img:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.3);
+}
+
+/*Configurando o rodapé*/
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer{
+    color: black;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    line-height: 1.5;
+}
+
+#nome-empresa{
+    font-weight: bold;
+}

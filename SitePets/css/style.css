@@ -1,0 +1,303 @@
+/*Remove os espaçamentos no elemento body*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Adiciona efeito na barra de rolagem do site*/
+    scroll-behavior: smooth;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Configuração do cabeçalho do site*/
+header{
+    width: 100%;
+    height: 650px;
+    /*Altura maxima para configurar junto com a imagem*/
+    max-height: 650px;
+    background-color: #dfcdcd;
+    background-image: url(../image/web.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+/*Configuração da área de navegação do site*/
+#menu{
+    width: 100%;
+    height: 90px;
+    background-color: #D9D9D9;
+    background-image: url(../image/eaeabffb4e6d375ad9f42a5f3c236861.png);
+    background-repeat: no-repeat;
+    background-position: 30px;
+    background-size: 100px auto;
+}
+
+a{
+    text-decoration: none;    
+    color: #000000;
+}
+
+ul{
+    display: flex;
+    height: 90%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+li{
+    min-width: 11%;
+    height: 70px;
+    /*Retira marcação de lista*/
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li:hover{
+    cursor: auto;
+    background-color: #a5a4a4;
+    color: white;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+ul li:hover a{
+    color: white;
+}
+
+/*Configuração conteudo do site*/
+main{
+    /*largura*/
+    width: auto;
+    /*alura*/
+    min-height: 1000px;
+    height: auto;
+    /*Desabilita a barra de rolagem da DIV*/
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7e6e698;
+    /*Centraliza o objeto*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Configuração da sessão sobre nós*/
+#sobre{
+    width: 1200px;
+    height: 800px;
+    overflow: hidden; 
+}
+
+#sobre h2{
+    padding-top: 100px;
+}
+
+/*Configuração do titulo*/
+.titulo{
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 40px;
+    color: #2d2519;
+}
+
+/*Configuração da div principal*/
+#logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.image-logo{
+    width: 30%;
+    display: flex;
+}
+
+.image-logo figure{
+    width: 399px;
+    height: 399px;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-logo{
+    display: flex;
+    align-items: flex-start; 
+    flex-direction: column;
+    padding-top: 65px;
+    padding-left: 90px;
+}
+
+.text-logo p{
+    width: 585px;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 20px;
+    padding: 20px 0px;
+    /*Espaçamento entre as linhas*/
+    line-height: 30px;
+}
+
+/*Configuração da sessão de serviço*/
+#campo-servico{
+    width: 100%;
+    height: 550px;
+    background-color: #ECDDDD;
+    padding-top: 40px;
+}
+
+#digite-aqui{
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#digite-aqui p{
+    font-size: 1.3em;
+    margin: 10px;
+    font-family: sans-serif;
+    padding: 95px 50px 0px 55px;
+    color: #2d2519;
+}
+
+/*Configurando a div do video*/
+#video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding-right: 20px; 
+}
+
+#video video{
+    width: 550px;
+    height: auto;
+    margin-top: -195px;
+    margin-block-end: 25px;
+    margin-right: 100px;
+    border-radius: 20px;
+}
+
+/*Configuração dos cards dos pets*/
+#titulo-cards{
+    width: 100%;
+    padding-top: 70px;
+    height: auto;
+    padding-bottom: 50px;
+    /* min-height: 1000px; */
+    overflow: hidden; 
+}
+
+#cards{
+    width: 100%;
+    height: auto;
+    min-height: 1000px;
+    /*Define as colunas*/
+    display: grid;
+    /*Define a quantidade de coluna*/
+    grid-template-columns: 315px 315px 315px;
+    /*Define o espaçamento entre as colunas*/
+    column-gap: 55px;
+    row-gap: 44px;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-pets{
+    width: 328px;
+    height: 440px;
+    transform: scale(1);
+    background-color: rgba(190, 190, 190, 0.056);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    /*Criando animação ao passar o mouse em cima do card*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards-pets:hover{
+    background-color: #ECDDDD;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); 
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cards-pets figure{
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cards-pets img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cards-pets p{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    color: #292929;
+    text-align: center;
+    line-height: 1.5;
+    margin: 5px 0;
+    /*Espaçamento entre as letras*/
+    letter-spacing: 0.5px;
+    text-shadow: none;
+}
+
+.cards-pets #nome-principal{
+    font-size: 1.6em;
+    margin: 15px 0 10px;
+    font-weight: bold;
+    margin-top: 35px;
+    text-align: center;
+    color: #333;
+}
+
+/*Configuração do rodapé do site*/
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer{
+    color: black;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    line-height: 1.5;
+}
+
+#nome-empresa{
+    font-weight: bold;
+}

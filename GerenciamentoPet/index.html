@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicho Mimado</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/index.js" type="module" defer></script>
+</head>
+
+<body>    
+    <!--Cabeçalho do sistema-->
+    <header class="titulo">Sistema de Gerenciamento Bicho Mimado</header>
+
+        <!--Conteúdo do sistema-->
+        <main>
+            <!--Aqui criamos uma div para iniciar o forms-->
+            <div id="principal">
+                <h1 class="titulo">Cadastro de Pets</h1>                
+                <form id="informacoes-cadastro">
+                    <label>Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label>Cor</label>
+                    <input type="text" name="cor" id="cor">
+                    <label>Raça</label>
+                    <input type="text" name="raca" id="raca">
+                    <label>Imagem</label>
+                    <input type="text" name="image" id="image">
+                    <div id="cadastrar">Cadastrar</div>
+                    <div id="limpar">Limpar</div>
+                </form>
+            </div>      
+            
+            <!--Aqui criamos div para listar todos os pets que serão cadastrados-->
+            <div id="listapets">
+                <h1> Listagem de Pets </h1>
+                <div class="linha">
+                    <div class="lista">Nome</div>
+                    <div class="lista">Cor</div>
+                    <div class="lista">Raça</div>                    
+                    <div class="lista">Opções</div>
+                </div>
+
+                <div id="listDados"></div>
+            </div>
+        </main>
+
+        <!--Rodapé do sistema-->
+        <footer>
+            <div id="footer">
+                <p id="nome-empresa">Bicho Mimado LTDA </p>
+                <p>Rua Ofélio Carlos Lacerda, 589 - 06784-330</p>
+                <p>Taboão da Serra - SP</p>
+            </div>
+        </footer>   
+
+    </body>
+</html>
